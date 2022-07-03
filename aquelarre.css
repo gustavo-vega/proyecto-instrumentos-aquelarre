@@ -26,7 +26,14 @@ ul {
 ul li a {
     margin: 0px 80px;
     text-decoration: none;
+    font-size: 25px;
 }
+
+li:hover {
+    transform: scale(1.1);
+    transition: 0,5s;
+}
+
 .img {
     height: 550px;
     width: 100%;
@@ -119,6 +126,11 @@ main img {
     overflow: hidden;
     transition: all 0.5s;
     font-size:20px;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 2px 2px blueviolet;
 }
 
 .bloque {
