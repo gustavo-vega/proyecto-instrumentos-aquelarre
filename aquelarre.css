@@ -1,0 +1,172 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+}
+
+li:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+ul li a {
+    margin: 0px 80px;
+    text-decoration: none;
+}
+.img {
+    height: 550px;
+    width: 100%;
+}
+main {
+    font-size: 25px;
+    padding-block-end: 50px; 
+}
+
+main img {
+    position: center;
+}
+
+.texto {
+    text-align: center;
+}
+
+.interlineado {
+    line-height: 30px;
+}
+
+.left {
+    float: left;
+    height: 100px;
+}
+
+#media {
+    float: left;
+    height: 1000px;
+}
+
+.footer {
+    padding: 50px;
+    background-color:  rgb(174, 170, 170);
+    color: white;
+    margin-top: 50px;
+    display: block;
+}
+
+.text {
+    font-size: medium;
+    line-height: 40px;
+}
+
+.redes {
+    display: flex; 
+    padding: 10px;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+     "insta instb instc instd"
+     "inste instf instg insth";
+}
+ /*grid area index*/
+.insta {
+    grid-area: insta;
+}
+.instb {
+    grid-area: instb;
+}
+.instc {
+    grid-area: instc;
+}
+.instd {
+    grid-area: instd;
+}
+.inste {
+    grid-area: inste;
+}
+.instf {
+    grid-area: instf;
+}
+.instg {
+    grid-area: instg;
+}
+.insth {
+    grid-area: insth;
+}
+     
+.card {
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 4px blue;
+    overflow: hidden;
+    transition: all 0.5s;
+    font-size:20px;
+}
+
+.bloque {
+    margin: 40px 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bloque__grid {
+    border: 2px solid rgb(58, 58, 89);
+}
+
+span {
+    display: none;
+    font-size: 20px;
+    margin-right: 80px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    ul {
+        display: none;
+    }
+
+    span {
+         display: inline-block;
+    }
+
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas:
+         "insta instb"
+         "instc instd"
+         "inste instf"
+         "instg insth";
+    }
+
+    .bloque {
+        grid-template-columns: 1fr ;
+    }
+}
